@@ -1,0 +1,42 @@
+# 3-1: Names
+
+print("3-1 Names")
+names = ['Lexi', 'Jen', 'Andy']
+
+print(names[0])
+print(names[1])
+print(names[2])
+
+print("3-2 Greetings")
+
+for name in names:
+  msg = "Hello, " + name.title() + "!"
+  print(msg)
+
+print("3-4 Guest List")
+
+guests = names
+
+for guest in guests:
+  msg = "Hello, " + guest.title() + "!"
+  print(msg)
+
+print("3-5 Changing Guest List")
+
+# Invite some people to dinner.
+guests = names
+
+for guest in guests:
+  msg = "Hello, " + guest.title() + "!"
+  print(msg)
+
+print("\nSorry, " + guests[1].title() + " can't make it to dinner.")
+
+# Jen can't make it! Let's invite Tom instead.
+del(guests[1])
+guests.insert(1, 'Tom')
+
+# Print the invitations again.
+for guest in guests:
+  msg = "Hello, " + guest.title() + "!"
+  print(msg)
